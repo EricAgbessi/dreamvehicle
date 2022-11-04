@@ -60,7 +60,12 @@ import {
 
           <DrawerBody>
           </DrawerBody>
-
+              <Box display={["none","none","none","flex"]}  >
+                  <Link paddingRight="15px">HOME</Link>
+                  <Link paddingRight="15px">ABOUT</Link>
+                  <Link paddingRight="15px">SERVICES</Link>
+                  <Link paddingRight="15px">CONTACT US</Link>
+              </Box>
           <DrawerFooter>
             
           </DrawerFooter>

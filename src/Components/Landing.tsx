@@ -11,7 +11,7 @@ const Landing = () => {
       }
       const bgimage:string="https://crdms.images.consumerreports.org/c_lfill,w_470,q_auto,f_auto/prod/cars/cr/car-versions/12630-2018-tesla-model-3-long-range"
     return (
-       <Stack direction={['column','column','row','row','row']}  paddingLeft={["0%","0%","0%","10%"]}   w="100%" h="500px" justifyContent="flex-start" >
+       <Stack direction={['column','column','row','row','row']}  paddingLeft={["0%","0%","0%","10%"]}   w="100%" justifyContent="flex-start" >
             <VStack  
                 bgImage={[bgimage,bgimage,"","",""]}
                 bgRepeat="no-repeat"
@@ -29,10 +29,9 @@ const Landing = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium tempore maxime libero iusto saepe cumque molestiae, atque tempora modi explicabo qui labore exercitationem omnis cum in recusandae, sequi, harum laudantium!
                 </Text>
 
-                <Button border="1px solid red" bgColor="#000000" color="white" fontSize="14px">GET STARTED</Button>
+                <Button  bgColor="#000000" color="white" fontSize="14px">GET STARTED</Button>
 
-
-                <HStack  w="100%" spacing="10" justifyContent={["center","center","flex-start","flex-start","flex-start"]}>
+                <HStack  w="100%" spacing="10" justifyContent={["center","center","flex-start","flex-start","flex-start"]} color={["black","black","black","black","black"]}>
                     <VStack as="b" fontSize="14px">
                         <Text >20K+</Text>
                         <VStack  spacing="0px">
