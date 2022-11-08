@@ -1,4 +1,4 @@
-import { Button, HStack, Link, Text,Box, useDisclosure,Input  } from '@chakra-ui/react';
+import { Button, HStack, Link, Text,Box, useDisclosure,Input, VStack  } from '@chakra-ui/react';
 import {AiOutlineAlignLeft} from 'react-icons/ai'
 import React from 'react';
 import {
@@ -59,13 +59,14 @@ import {
           <DrawerHeader></DrawerHeader>
 
           <DrawerBody>
-          </DrawerBody>
-              <Box display={["none","none","none","flex"]}  >
+              <VStack alignItems="flex-start">
                   <Link paddingRight="15px">HOME</Link>
                   <Link paddingRight="15px">ABOUT</Link>
                   <Link paddingRight="15px">SERVICES</Link>
                   <Link paddingRight="15px">CONTACT US</Link>
-              </Box>
+              </VStack>
+          </DrawerBody>
+             
           <DrawerFooter>
             
           </DrawerFooter>

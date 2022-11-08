@@ -4,6 +4,7 @@ import {BsShieldCheck} from 'react-icons/bs'
 import {} from 'react-icons/ai'
 import React from 'react';
 import OneWhy from './OneWhy';
+import {motion} from 'framer-motion'
 
 const Whychoseus = () => {
 
@@ -16,9 +17,27 @@ const Whychoseus = () => {
     }
 
     return (
-    <VStack  spacing="80px" alignItems="center" justifyContent="center">
+    <VStack 
+        as={motion.div} 
+        initial={{
+            opacity:0,
+            y:"200px"
+        }}
+
+        whileInView={{
+            opacity:1,
+            y:"0px"
+        }}
+
+
+        transition={{
+            
+        }}
+
+
+        spacing="80px" alignItems="center" justifyContent="center">
         <Text fontSize='3xl'>WHY CHOOSE US ?</Text>
-        <Stack direction={["column","column","row","row","row"]} w="100%" justifyContent="center" spacing="20">
+        <Stack direction={["column","column","row","row","row"]} w="100%" alignItems="center" justifyContent="center" spacing="20">
             <OneWhy 
                 title="Carbon Neutral" 
                 descrition="Lorem ipsum dolor sit amet 
@@ -26,7 +45,7 @@ const Whychoseus = () => {
                 amet consectetur.dipisicing elit.Lorem ipsum dolor sit amet consecteturadipisicing elit.
                 Lorem ipsum dolor sit amet consectetur.dipisicing elit.Lorem ipsum dolor sit amet consectetur" 
                 icon={<AiOutlineCar size="40px" />}
-                Boxshadow=""      
+                Boxshadow={false}      
             />
 
 
@@ -37,7 +56,7 @@ const Whychoseus = () => {
                 amet consectetur.dipisicing elit.Lorem ipsum dolor sit amet consecteturadipisicing elit.
                 Lorem ipsum dolor sit amet consectetur.dipisicing elit.Lorem ipsum dolor sit amet consectetur" 
                 icon={<BsShieldCheck size="40px" />}
-                Boxshadow="0px 1px 49px 0px rgba(0,0,0,0.75);"      
+                Boxshadow={true}   
             />
 
 
@@ -49,7 +68,7 @@ const Whychoseus = () => {
                 amet consectetur.dipisicing elit.Lorem ipsum dolor sit amet consecteturadipisicing elit.
                 Lorem ipsum dolor sit amet consectetur.dipisicing elit.Lorem ipsum dolor sit amet consectetur" 
                 icon={<AiTwotoneStar size="40px" />}
-                Boxshadow=""      
+                Boxshadow={false}    
             />
 
         </Stack>

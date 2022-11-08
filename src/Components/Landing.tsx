@@ -1,5 +1,6 @@
 import { Stack,HStack, Text, VStack,Button } from '@chakra-ui/react';
 import React from 'react';
+import {motion} from "framer-motion"
 
 const Landing = () => {
     const breakpoints = {
@@ -13,6 +14,26 @@ const Landing = () => {
     return (
        <Stack direction={['column','column','row','row','row']}  paddingLeft={["0%","0%","0%","10%"]}   w="100%" justifyContent="flex-start" >
             <VStack  
+                as={motion.div}
+               /* animate={{
+                    opacity: 1,
+                    x:"0px"
+                }}*/
+                whileInView={{
+                    opacity:1,
+                    x:"0px"
+                }}
+                initial={{
+                    opacity:0.1,
+                    x:"-200px"
+                }}
+
+                transition={{ 
+                    delay: '1',
+                    duration:'2' 
+                }}
+
+
                 bgImage={[bgimage,bgimage,"","",""]}
                 bgRepeat="no-repeat"
                 color={["white","white","black","black","black"]}
@@ -66,7 +87,19 @@ const Landing = () => {
                     </VStack>
                 </HStack>
             </VStack>
-            <VStack  h="500px" w="50%" 
+            <VStack 
+                as={motion.div}
+                whileInView={{
+                    x:"0px"
+                }}
+                /*animate={{
+                    x:"0px"
+                }}*/
+                initial={{
+                    x:"300px"
+                }}
+
+                h="500px" w="50%" 
                 display={["none","none","flex","flex","flex"]}
                 bgRepeat="no-repeat"
                 bgPosition="center"

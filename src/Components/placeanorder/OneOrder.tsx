@@ -34,7 +34,23 @@ const OneOrder = (props:OneOrderI) => {
     
 
     return (
-        <Box h="300px" margin="40px" w={["100%","100%","40%","40%","40%"]} 
+        <Box 
+            as={motion.div}
+            initial={{
+                y:"300px",
+                opacity:0
+            }}
+
+            whileInView={{
+                y:"0px",
+                opacity:1
+            }}
+            transition={{
+               
+            }}
+            
+
+            h="300px" margin="40px" w={["100%","100%","40%","40%","40%"]} 
             onMouseEnter={hover_animate}
             onMouseLeave={hover_leave}
             bgPosition="center"
@@ -42,7 +58,26 @@ const OneOrder = (props:OneOrderI) => {
             bgImage={props.images}
         >
             {show? 
-                <motion.div style={
+                <motion.div 
+                    initial={{
+                        opacity:0,
+                        
+                    }}
+                    transition={{
+                        type:"spring",
+                        duration:2
+                    }}
+                   
+
+                    whileHover={{
+                        opacity:1
+                    }}
+
+                    whileTap={{
+                        scale:1.2
+                    }}
+
+                    style={
                     { 
                         backgroundColor:"rgba(0,0,0,70%)",
                         height:"300px",
