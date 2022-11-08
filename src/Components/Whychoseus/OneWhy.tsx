@@ -23,7 +23,7 @@ const OneWhy = (props:Whychoseus) => {
     }
 
     return (
-        <VStack w={["100%","100%","15%","15%","15%"]}  color='black' alignItems="center" padding='10px' style={whyStyle} >
+        <VStack  w={["100%","100%","15%","15%","15%"]}  color='black' alignItems="center" padding='10px' style={whyStyle} >
             {props.icon}
             <Text as='b' >{props.title}</Text>
             <Text color='#939393' fontSize='12px' textAlign="center">{props.descrition}</Text>

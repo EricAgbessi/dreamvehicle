@@ -5,6 +5,7 @@ import Landing from '../Components/Landing';
 import Whychoseus from '../Components/Whychoseus/Whychoseus';
 import Placeanorder from '../Components/placeanorder/Placeanorder';
 import Autorizied from '../Components/Autorizied';
+import Footer from '../Components/Footer';
 const Home = () => {
     return (
         <VStack spacing="80px">
@@ -30,6 +31,7 @@ const Home = () => {
                 ></Box>
             </VStack>
             <Autorizied/>
+            <Footer/>
            <br/>
            <br/>
            <br/>
