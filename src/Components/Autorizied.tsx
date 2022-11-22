@@ -13,7 +13,7 @@ const Autorizied = () => {
                 color={["white","white","black","black","black"]}
                 w={["100%","100%","40%","40%","40%"]} 
                 alignItems="flex-start" spacing="10" 
-                padding="15px" 
+                padding="14px" 
                 > 
 
                 <Text fontSize={["3xl","3xl", "3xl", "3xl","3xl"]} as="b" textShadow={["2px 2px 20px #000000","2px 2px 20px #000000","0px 0px 0px #000000","0px 0px 0px #000000","0px 0px 0px #000000"]} >
